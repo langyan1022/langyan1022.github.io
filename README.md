@@ -1,1 +1,2 @@
-# langyan1022.github.io
+# Blog
+Quick start blog for ink
