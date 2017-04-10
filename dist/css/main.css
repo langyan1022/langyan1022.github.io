@@ -324,6 +324,7 @@ input{
     border: none;
 }
 input[type=text]{
+    width: 90%;
     border-bottom: 1px solid #888888;
 }
 input[type=button]{
