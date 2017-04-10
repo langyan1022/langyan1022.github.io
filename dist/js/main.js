@@ -31,7 +31,7 @@ $(function(){
 
     $("#main").css({"width":winWidth,"height":bgHeight});
     $("#screen1").css({"width":winWidth});
-    $("#name").css({"top":nameTop,"font-size":nameOrginSize});
+    $("#name").css({"top":nameTop,"font-size":nameOrginSize,"width":nameOrginSize});
     $("#screen1").css({"height":winHeight});
 
 
