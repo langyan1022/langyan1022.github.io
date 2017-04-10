@@ -309,6 +309,8 @@ textarea {
     justify-content: center;
     align-items:center;
     background: url("../img/bg-screen.png") repeat;
+    overflow: hidden;
+    width: 100%;
 }
 #screen1 .wrap{
     width: 95%;
