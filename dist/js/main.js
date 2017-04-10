@@ -4,6 +4,8 @@ $(function(){
     }
     window.name=window.name||"";
 
+    var $loader=$('#loader');
+
     var winWidth=$(window).width();
     var winHeight=$(window).height();
     var bgOrginWidth=640;
@@ -19,6 +21,8 @@ $(function(){
         bgHeight=winWidth/bgOrginWidth*bgOrignHeight;
         nameTop=winWidth/bgOrginWidth*nameOrginTop;
     }
+
+    $loader.hide();
 
     $("#main").css({"width":winWidth,"height":bgHeight});
     $("#screen1").css({"width":winWidth});
@@ -45,9 +49,16 @@ $(function(){
             $('#inputName').val("").focus();
             return;
         }
+        $loader.show();
+
         $("#screen1").hide('slow');
         $("#screen2").show('slow');
         $("#name").text(window.name);
+        setTimeout(function() {
+
+            $loader.hide('slow');
+        }, 3000);
+
 
     })
 });
