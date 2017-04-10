@@ -21,6 +21,7 @@ $(function(){
     }
 
     $("#main").css({"width":winWidth,"height":bgHeight});
+    $("#screen1").css({"width":winWidth});
     $("#name").css({"top":nameTop});
     $("#screen1").css({"height":winHeight});
 
