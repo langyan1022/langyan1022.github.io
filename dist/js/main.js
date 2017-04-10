@@ -14,19 +14,24 @@ $(function(){
 
     var nameOrginTop=1410;
     var nameTop=0;
+
+    var nameOrginSize=60;
+
     if(winWidth>bgOrginWidth){
         bgHeight=bgOrginWidth/winWidth*bgOrignHeight;
         nameTop=bgOrginWidth/winWidth*nameOrginTop;
+        nameOrginSize=bgOrginWidth/winWidth*nameOrginSize;
     }else{
         bgHeight=winWidth/bgOrginWidth*bgOrignHeight;
         nameTop=winWidth/bgOrginWidth*nameOrginTop;
+        nameOrginSize=winWidth/bgOrginWidth*nameOrginSize;
     }
 
     $loader.hide();
 
     $("#main").css({"width":winWidth,"height":bgHeight});
     $("#screen1").css({"width":winWidth});
-    $("#name").css({"top":nameTop});
+    $("#name").css({"top":nameTop,"font-size":nameOrginSize});
     $("#screen1").css({"height":winHeight});
 
 
